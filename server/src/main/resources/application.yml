@@ -1,0 +1,16 @@
+okta:
+  oauth2:
+    client-id: 0oafzcx9d0qPKb0Ni0h7
+    issuer: https://dev-737523.oktapreview.com/oauth2/default
+
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          okta:
+#            client-id: 0oafzcx9d0qPKb0Ni0h7
+#            scope: openid email profile
+#        provider:
+#          okta:
+#            issuer-uri: https://dev-737523.oktapreview.com/oauth2/default
