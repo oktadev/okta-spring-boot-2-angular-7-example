@@ -2,7 +2,7 @@
  
 This example app shows how to build a basic CRUD app with Spring Boot 2.1, Spring Data, and Angular 7.0.
 
-Please read [Build a Basic CRUD App with Angular 7.0 and Spring Boot 2.1]() to see how this app was created.
+Please read [Build a Basic CRUD App with Angular 7.0 and Spring Boot 2.1](https://developer.okta.com/blog/2018/08/22/basic-crud-angular-7-and-spring-boot-2) to see how this app was created.
 
 **Prerequisites:** [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and [Node.js](https://nodejs.org/). For Java 10+, you'll need to change the `java.version` property and `jaxb-api` as a dependency. See Josh Long's [spring-boot-and-java-10](https://github.com/joshlong/spring-boot-and-java-10) project on GitHub for more information.
 
@@ -85,7 +85,7 @@ This example uses the following open source libraries:
 
 ## Help
 
-Please post any questions as comments on the [blog post](), or visit our [Okta Developer Forums](https://devforum.okta.com/). You can also email developers@okta.com if would like to create a support ticket.
+Please post any questions as comments on the [blog post](https://developer.okta.com/blog/2018/08/22/basic-crud-angular-7-and-spring-boot-2), or visit our [Okta Developer Forums](https://devforum.okta.com/). You can also email developers@okta.com if would like to create a support ticket.
 
 ## License
 
