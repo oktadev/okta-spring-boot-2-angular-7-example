@@ -71,9 +71,9 @@ const config = {
 
 ## Links
 
-This example uses the following open source libraries:
+This example uses the following open source libraries from Okta:
 
-* [Spring Security](http://projects.spring.io/spring-security/)
+* [Okta Spring Boot Starter](https://github.com/okta/okta-spring-boot)
 * [Okta Angular SDK](https://github.com/okta/okta-oidc-js/tree/master/packages/okta-angular)
 
 ## Help
