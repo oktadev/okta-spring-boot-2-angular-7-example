@@ -51,17 +51,10 @@ Set your domain and copy the `clientId` into `server/src/main/resources/applicat
 **NOTE:** The value of `{yourOktaDomain}` should be something like `dev-123456.oktapreview`. Make sure you don't include `-admin` in the value!
 
 ```yaml
-spring:
-  security:
-    oauth2:
-      client:
-        registration:
-          okta:
-            client-id: {clientId}
-            scope: openid email profile
-        provider:
-          okta:
-            issuer-uri: https://{yourOktaDomain}/oauth2/default
+okta:
+  oauth2:
+    client-id: {clientId}
+    issuer: https://{yourOktaDomain}/oauth2/default
 ```
 
 #### Client Configuration
