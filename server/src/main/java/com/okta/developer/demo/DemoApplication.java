@@ -14,8 +14,8 @@ import org.springframework.web.filter.CorsFilter;
 import java.util.Collections;
 import java.util.stream.Stream;
 
-@SpringBootApplication
 @EnableResourceServer
+@SpringBootApplication
 public class DemoApplication {
 
 	public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class DemoApplication {
 	}
 
 	@Bean
-    ApplicationRunner init(CarRepository repository) {
+	ApplicationRunner init(CarRepository repository) {
 		return args -> {
 			Stream.of("Ferrari", "Jaguar", "Porsche", "Lamborghini", "Bugatti",
 					"AMC Gremlin", "Triumph Stag", "Ford Pinto", "Yugo GV").forEach(name -> {
