@@ -10,7 +10,7 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 
 . Add `Car`, `CarRepository`, and `ApplicationRunner` bean [`boot-entity-lombok`, `boot-repo`, `boot-data`]
 
-. Start and see list of profiles in console: `./mvnw spring-boot:run`
+. Start and see list of cars in console: `./mvnw spring-boot:run`
 
 . Create `CoolCarController` with a `/cool-cars` endpoint [`boot-cool`]
 
