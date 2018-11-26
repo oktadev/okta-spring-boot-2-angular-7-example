@@ -47,8 +47,8 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 === Angular Material + Giphy
 
 . Add Angular Material imports and modify HTML [`mat-imports`, `mat-toolbar`, `mat-card`]
-. Add Animated Cars with Giphy [`ng-giphy-service`, `ng-giphy-foreach`]
 . Modify `styles.css` to specify theme and icons [`mat-style`]
+. Add Animated Cars with Giphy [`ng-giphy-service`, `ng-giphy-foreach`]
 
 === Add an Edit Feature
 
