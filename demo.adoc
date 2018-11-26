@@ -8,11 +8,11 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 
   http https://start.spring.io/starter.zip dependencies==h2,data-jpa,data-rest,lombok,web,devtools,actuator -d
 
-. Add `Car`, `CarRepository`, and `ApplicationRunner` bean [`boot-entity`, `boot-repo`, `boot-data`]
+. Add `Car`, `CarRepository`, and `ApplicationRunner` bean [`boot-entity-lombok`, `boot-repo`, `boot-data`]
 
 . Start and see list of profiles in console: `./mvnw spring-boot:run`
 
-. Create `CoolCarController` with a `/cool-cars` endpoint
+. Create `CoolCarController` with a `/cool-cars` endpoint [`boot-cool`]
 
 . Restart and confirm http://localhost:8080/cars works in browser and with https://httpie.org/[HTTPie]
 
@@ -28,7 +28,7 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 
   npm i @angular/material @angular/cdk @angular/animations
 
-. Generate a car service to talk to the API
+. Generate a car service to talk to the API [`a-httpclient-get`]
 
   ng g s shared/car/car
 
@@ -38,16 +38,17 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 
   ng g c car-list
 
-. Update `car-list.component.html` to show the list of cars
+. Update `car-list.component.html` to show the list of cars [`a-ngFor`]
 
 . Update `app.component.html` to use the `<app-car-list>` component
 
-. Start the app, show error, modify `/cool-cars` and repositority to use `@CrossOrigin`
+. Start the app, show error, modify `/cool-cars` and repository to use `@CrossOrigin`
 
 === Angular Material + Giphy
 
-. Add Angular Material imports and modify HTML
-. Add Animated Cars with Giphy
+. Add Angular Material imports and modify HTML [`mat-imports`, `mat-toolbar`, `mat-card`]
+. Add Animated Cars with Giphy [`ng-giphy-service`, `ng-giphy-foreach`]
+. Modify `styles.css` to specify theme and icons [`mat-style`]
 
 === Add an Edit Feature
 
@@ -55,15 +56,15 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 
   ng g c car-edit
 
-. Add a link to edit component in `car-list.component.html`
+. Add a link to edit component (+add button) in `car-list.component.html` [`mat-edit`, `mat-add`]
 
 . Import the `FormsModule` in `app.module.ts`
 
-. Add routing to list and edit components in `app-routing.module.ts`
+. Add routing to list and edit components in `app-routing.module.ts` [`ng-routes`]
 
-. Modify edit component and car service to add methods for saving and deleting.
+. Modify edit component and car service to add methods for saving and deleting. [`ng-service-cud`, `ng-edit`]
 
-. Make the edit template look good + add some CSS.
+. Make the edit template look good + add some CSS. [`mat-form`]
 
 . Remove `<app-car-list/>` from `app.component.html`, restart, rejoice!
 
@@ -79,20 +80,21 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 
   npm i @okta/okta-angular
 
-. Update `app.module.ts` to have Okta config and use OktaAuthModule` component [`ng-config`, `ng-oauth`]
+. Update `app.module.ts` to have Okta config and use OktaAuthModule` component [`okta-config`, `ng-oauth`, ng-oauth-import`]
 
-. Update `app-routing.module.ts` to have a new route for the redirect URI callback
+. Update `app-routing.module.ts` to have a new route for the redirect URI callback [`ng-callback`, `ng-callback-import`]
 
-. Create an `AuthInterceptor` {because they're awesome}, register it too
+. Create an `AuthInterceptor` in `okta/auth.interceptor.ts` and register it [`ng-interceptor`, `ng-provider`]
 
-. Modify `app.component.html` to have login and logout buttons + adjust CSS
+. Modify `app.component.html` to have login and logout buttons + adjust CSS [`mat-login`, `toolbar-spacer`]
 
-. Change `app.component.ts` to be security aware
+. Change `app.component.ts` to be security aware [`ng-app-auth`]
 
-. Create `HomeComponent` as a landing page
+. Create `HomeComponent` as a landing page and add routes [`mat-home`, `ng-home`]
 
 . Watch demo fail because of CORS
 
 . Add a `corsFilter` to Spring Security and rejoice 🎉
+[`cors-filter`]
 
 Source: https://developer.okta.com/blog/2018/08/22/basic-crud-angular-7-and-spring-boot-2
