@@ -80,9 +80,9 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 
   npm i @okta/okta-angular
 
-. Update `app.module.ts` to have Okta config and use `OktaAuthModule` component [`okta-config`, `ng-oauth`, ng-oauth-import`]
+. Update `app.module.ts` to have Okta config and use `OktaAuthModule` component [`okta-config`, `ng-oauth`]
 
-. Update `app-routing.module.ts` to have a new route for the redirect URI callback [`ng-callback`, `ng-callback-import`]
+. Update `app-routing.module.ts` to have a new route for the redirect URI callback [`ng-callback`]
 
 . Create an `AuthInterceptor` in `okta/auth.interceptor.ts` and register it [`ng-interceptor`, `ng-provider`]
 
