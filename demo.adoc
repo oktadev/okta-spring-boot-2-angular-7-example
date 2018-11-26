@@ -88,9 +88,11 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 
 . Modify `app.component.html` to have login and logout buttons + adjust CSS [`mat-login`, `toolbar-spacer`]
 
-. Change `app.component.ts` to be security aware [`ng-app-auth`]
+. Change `app.component.ts` to be security aware [`ng-auth`]
 
-. Create `HomeComponent` as a landing page and add routes [`mat-home`, `ng-home`]
+. Show app and issue with car list component
+
+. Create `HomeComponent` as a landing page and add routes [`mat-home`, `ng-auth`]
 
 . Watch demo fail because of CORS
 
