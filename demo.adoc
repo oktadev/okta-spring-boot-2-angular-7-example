@@ -62,7 +62,7 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 
 . Add routing to list and edit components in `app-routing.module.ts` [`ng-routes`]
 
-. Modify edit component and car service to add methods for saving and deleting. [`ng-service-cud`, `ng-edit`]
+. Modify edit component and car service to add methods for saving and deleting. [`ng-service-api`, `ng-service-cud`, `ng-edit`]
 
 . Make the edit template look good + add some CSS. [`mat-form`]
 
@@ -80,7 +80,7 @@ The brackets at the end of each step indicate the alias's or IntelliJ Live Templ
 
   npm i @okta/okta-angular
 
-. Update `app.module.ts` to have Okta config and use OktaAuthModule` component [`okta-config`, `ng-oauth`, ng-oauth-import`]
+. Update `app.module.ts` to have Okta config and use `OktaAuthModule` component [`okta-config`, `ng-oauth`, ng-oauth-import`]
 
 . Update `app-routing.module.ts` to have a new route for the redirect URI callback [`ng-callback`, `ng-callback-import`]
 
