@@ -63,7 +63,7 @@ For the client, set the `issuer` and copy the `clientId` into `client/src/app/ap
 
 ```typescript
 const config = {
-  issuer: 'https://{yourOktaDomain}.com/oauth2/default',
+  issuer: 'https://{yourOktaDomain}/oauth2/default',
   redirectUri: window.location.origin + '/implicit/callback',
   clientId: '{clientId}'
 };
